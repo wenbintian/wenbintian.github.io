@@ -12,11 +12,17 @@
         </li>
         <li class="people_box_item">
           <div class="people_box_ct people_box_all"><ul>
-            <li class="people_name">总共 <span class="people_name--all">{{allLength}}</span> 人，已选 <span class="people_name--all">{{activeLength}}</span> 人</li>
+            <li class="people_name">总共 <span class="people_name--all">{{allLength}}</span> 人，已选 <span class="people_name--all">{{activeList.length}}</span> 人</li>
           </ul></div>
         </li>
       </ul></div></el-col>
-      <el-col :span="16"><div class="grid-content bg-purple-light">s</div></el-col>
+      <el-col :span="16"><div class="main_box">
+        <ul>
+          <li class="main_box_item" :style="{width:100/powLength+'%',height:100/powLength+'%'}" v-for="d in activeList" :key="d.id"><div
+            class="main_box_item--inner"
+          >{{d.name}}</div></li>
+        </ul>
+      </div></el-col>
     </el-row>
   </div>
 </template>
@@ -31,14 +37,17 @@
         peopleList: [
           {id:"1",name:"设计",type:"1",typeVal:"1",children:[
             {id:"1_1",name:"张某某",type:"2",typeVal:"1"},{id:"1_2",name:"陈某某",type:"2",typeVal:"1"},
-            {id:"1_1",name:"张某某",type:"2",typeVal:"3"},{id:"1_2",name:"陈某某",type:"2",typeVal:"3"},
+            {id:"1_3",name:"张某某",type:"2",typeVal:"3"},{id:"1_4",name:"陈某某",type:"2",typeVal:"3"},
+            {id:"1_5",name:"张某某",type:"2",typeVal:"1"},{id:"1_6",name:"陈某某",type:"2",typeVal:"1"},
+            {id:"1_7",name:"张某某",type:"2",typeVal:"3"},{id:"1_8",name:"陈某某",type:"2",typeVal:"3"},
           ]},
           {id:"2",name:"前端",type:"1",typeVal:"1",children:[
             {id:"2_1",name:"黄某某",type:"2",typeVal:"1"},{id:"2_2",name:"彭某某",type:"2",typeVal:"1"}
           ]},
         ],
         allLength:0,//共多少人
-        activeLength:0,//选中的多少人
+        activeList:[],//当前参加的数据 array
+        powLength:1,
       }
     },
     filters:{
@@ -67,30 +76,38 @@
       },
       dealPeopleNum(){
         let allL=0;
-        let activeL=0;
+        this.activeList=[];
         for(let i=0,l=this.peopleList.length; i<l; i++){
           let d1=this.peopleList[i].children;
           if(!d1 || !d1.length) continue;
           for(let j=0,k=d1.length; j<k; j++){
             let d2 = d1[j];
             if(d2.typeVal=="1"){//选中的加加
-              activeL++;
+              this.activeList.push(d2);
             }
             allL++;//总数加一
           }
         }
-      this.allLength = allL;
-      this.activeLength = activeL;
+        this.allLength = allL;
+        this.powLength = Math.ceil(Math.pow(this.activeList.length,0.5));
       }
     },
     mounted(){
       this.dealPeopleNum();
+      window.onresize=function(){
+        console.log("ssssss")
+      }
     }
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .main_box{overflow: hidden; position: relative; height: 500px;}
+  .main_box>ul{height: 100%;}
+  .main_box_item{position: relative; float: left; box-sizing: border-box; padding: 6px;}
+  .main_box_item--inner{background: #12AFE6; height: 100%; line-height: 100%;}
+
   .people_box{padding: 0 20px;}
   .people_box_item{border: 1px solid #ddd;}
   .people_box_item+.people_box_item{border-top: none;}
