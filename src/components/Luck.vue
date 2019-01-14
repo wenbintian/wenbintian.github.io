@@ -172,7 +172,7 @@
   .main_box_item--inner{position: relative; background: #00A3E7; height: 100%; line-height: 100%; border-radius: 4px; cursor: pointer;}
   .main_box_item--inner.rotate_class{animation: rotate 1s linear infinite;}
   .main_box_item--inner.bg_shadow{box-shadow: 0 0 20px 0 rgba(46, 61, 73, 0.5);}
-  .main_box_item--inner .el_icon{color: #e8bb3b; font-size: 36px; position: absolute; left: 50%; margin-left: -36px; margin-top: -36px; top: 50%;}
+  .main_box_item--inner .el_icon{color: #e8bb3b; font-size: 36px; position: absolute; left: 50%; margin-left: -36px; margin-top: -36px; top: 50%; width: 72px; text-align: center;}
   .main_box_item--inner .el_icon span{font-size: 24px; display: block; line-height: 35px;}
   .main_box_item--inner.selected{background: #00A3E7;}
   .main_box_item--inner .select_name{color: #fff;}
