@@ -5,8 +5,10 @@
         <li class="people_box_item" v-for="d1 in peopleList" :key="d1.id">
           <div class="people_box_tt">{{d1.name}}</div>
           <div class="people_box_ct" v-if="d1.children && d1.children.length"><ul>
-            <li class="people_name" v-for="d2 in d1.children" :key="d2.id">
-              <el-button @click="nameClickEvn(d2)" :type="d2 | filterButtonType" size="normal">{{d2.name}}</el-button>
+            <li class="people_name" v-for="(d2,index2) in d1.children" :key="d2.id">
+              <el-button class="people_btn" @click="nameClickEvn(d2)" :type="d2 | filterButtonType" size="normal">{{d2.name}}
+                <i class="el-tag__close el-icon-close people_close" @click.stop="deleteItemEvn(d2,index2,d1)"></i>
+              </el-button>
             </li>
           </ul></div>
         </li>
@@ -15,7 +17,20 @@
             <li class="people_name">总共 <span class="people_name--all">{{allLength}}</span> 人，已选 <span class="people_name--all">{{activeList.length}}</span> 人</li>
           </ul></div>
         </li>
-      </ul></div></el-col>
+      </ul></div>
+      <div class="btn_box">
+        <el-select clearable class="add_pid" v-model="addItem.pid" placeholder="请选中分类">
+          <el-option
+            v-for="item in peopleList"
+            :key="item.id"
+            :label="item.name"
+            :value="item.id">
+          </el-option>
+        </el-select>
+        <el-input class="add_name" placeholder="请输入名字" v-model="addItem.name"></el-input>
+        <el-button class="add_btn" title="临时添加人员信息" @click="addItemEvn">添加</el-button>
+
+      </div></el-col>
       <el-col :span="16">
         <div class="main_box" :style="{height: mainBoxHeight}">
         <ul>
@@ -44,6 +59,7 @@
         activeList:[],//当前参加的数据 array
         powLength:1,
         mainBoxHeight:"auto",
+        addItem:{pid:"",name:""}
       }
     },
     filters:{
@@ -63,6 +79,13 @@
       }
     },
     methods:{
+      deleteItemEvn(d2,index2,d1){
+        this.$confirm(`是否删除名称为：${d2.name}的信息？`).then(()=>{
+          d1.children.splice(index2,1);
+          this.$message.success("删除成功！");
+          this.dealPeopleNum();
+        });
+      },
       nameClickEvn(d){
         switch (d.typeVal){
           case "3":
@@ -121,25 +144,50 @@
           d.beginFlag=false;
           d.selected = true;
         },1200);
-      }
+      },
+      //临时添加人员
+      addItemEvn(){
+        if(!this.addItem.name){
+          this.$message.warning("添加的名字不能为空！");
+          return;
+        }
+        let hasFlag = false;
+        this.addItem.pid = this.addItem.pid||"##";
+        for(let i=0,l=this.peopleList.length; i<l; i++){
+          let d = this.peopleList[i];
+          if(d.id==this.addItem.pid){
+            hasFlag=true;
+            d.children.push(Object.assign({typeVal:"1",id:new Date().getTime()},this.addItem));
+            break;
+          }
+        }
+        if(!hasFlag){
+          this.peopleList.push({
+            id:"##",name:"其他",children:[{id:new Date().getTime(),name:this.addItem.name,typeVal:"1"}]
+          });
+        }
+        this.$message.success("添加成功！");
+        this.dealPeopleNum();
+      },
     },
     mounted(){
+      //typeVal:1:正常  2:选中 3:不可用
       var a = [
-        {id:"1",name:"设计-男",type:"1",typeVal:"1",children:[
-          {id:"1_1",name:"陈永杰",type:"2",typeVal:"3"},{id:"1_2",name:"姚鑫",type:"2",typeVal:"1"},
-          {id:"1_3",name:"陈杰",type:"2",typeVal:"1"},{id:"1_4",name:"易剑芸",type:"2",typeVal:"1"},
-          {id:"1_5",name:"叶志勇",type:"2",typeVal:"1"},{id:"1_6",name:"林志华",type:"2",typeVal:"1"}
+        {id:"1",name:"设计-男",typeVal:"1",children:[
+          {id:"1_1",name:"陈永杰",typeVal:"3"},{id:"1_2",name:"姚鑫",typeVal:"1"},
+          {id:"1_3",name:"陈杰",typeVal:"1"},{id:"1_4",name:"易剑芸",typeVal:"1"},
+          {id:"1_5",name:"叶志勇",typeVal:"1"},{id:"1_6",name:"林志华",typeVal:"1"}
         ]},
-        {id:"2",name:"设计-女",type:"1",typeVal:"1",children:[
-          {id:"2_1",name:"张琪媛",type:"2",typeVal:"1"},{id:"2_2",name:"易艳君",type:"2",typeVal:"1"},{id:"2_3",name:"陈丽丽",type:"2",typeVal:"1"}
+        {id:"2",name:"设计-女",typeVal:"1",children:[
+          {id:"2_1",name:"张琪媛",typeVal:"1"},{id:"2_2",name:"易艳君",typeVal:"1"},{id:"2_3",name:"陈丽丽",typeVal:"1"}
         ]},
-        {id:"3",name:"前端-男",type:"1",typeVal:"1",children:[
-          {id:"3_1",name:"田文滨",type:"2",typeVal:"1"},{id:"3_2",name:"骆至坤",type:"2",typeVal:"1"},
-          {id:"3_3",name:"黄剑昆",type:"2",typeVal:"1"},{id:"3_4",name:"刘宏",type:"2",typeVal:"1"},{id:"3_5",name:"张弛",type:"2",typeVal:"1"}
+        {id:"3",name:"前端-男",typeVal:"1",children:[
+          {id:"3_1",name:"田文滨",typeVal:"1"},{id:"3_2",name:"骆至坤",typeVal:"1"},
+          {id:"3_3",name:"黄剑昆",typeVal:"1"},{id:"3_4",name:"刘宏",typeVal:"1"},{id:"3_5",name:"张弛",typeVal:"1"}
         ]},
-        {id:"4",name:"前端-女",type:"1",typeVal:"1",children:[
-          {id:"4_1",name:"刘洪南",type:"2",typeVal:"1"},{id:"4_2",name:"李凌燕",type:"2",typeVal:"1"},
-          {id:"4_3",name:"陈梅秀",type:"2",typeVal:"1"},{id:"4_4",name:"李曼",type:"2",typeVal:"1"}
+        {id:"4",name:"前端-女",typeVal:"1",children:[
+          {id:"4_1",name:"刘洪南",typeVal:"1"},{id:"4_2",name:"李凌燕",typeVal:"1"},
+          {id:"4_3",name:"陈梅秀",typeVal:"1"},{id:"4_4",name:"李曼",typeVal:"1"}
         ]},
       ];
       var t = localStorage.getItem("LuckSourceArr");
@@ -182,9 +230,16 @@
   .people_box_tt{padding-left: 5px; text-align: left; line-height: 30px; border-bottom: 1px solid #ddd; font-weight: bold;}
   .people_box_ct{overflow: hidden;}
   .people_name{float: left; padding: 5px;}
+  .people_name .people_btn{position: relative;}
+  .people_name .people_close{background-color: transparent; color: transparent; position: absolute; top: 2px;
+    right: 2px; border-radius: 6px; width: 12px; height: 12px; font-size: 12px;
+  }
+  .people_name .people_close:hover{background-color: #f56c6c; color: #fff;}
   .people_name--all{font-size: 18px; font-weight: bold; color: #3a8ee6;}
   .people_box_all{border-top: 2px solid #ddd; padding: 6px 2px;}
   .btn_box{ border: 1px solid #ddd; margin-right: 20px; padding: 10px; margin-top: 10px; text-align: left; }
+  .btn_box .add_pid, .btn_box .add_name{width: 38%;}
+  .btn_box .add_btn{width: 20%;}
   @keyframes rotate
   {
     from{-webkit-transform: rotateY(0deg)}
