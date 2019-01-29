@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>首页</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes">-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+</head>
+<body>
+<div class="fix_nav ComFixNav"><ul>
+    <li class="phone"><div class="clock-item">服务热线：123123123123</div></li>
+    <li class="clock"><div class="clock-item">服务时间：<br>9：00-12：00 <br> 13：00-18：00</div></li>
+    <li class="QRCode"><div class="clock-item"><h4>微信二维码</h4><img src="../image/kefu.jpg" alt="alt"></div></li>
+    <li class="BackTop"><a href="#"></a></li>
+</ul></div>
+
+<!--头部-->
+<div class="uiContainer">
+     <div class="menu">
+        <div class="logo-inner">
+            <img src="../image/logo.png" alt="logo" class="logo">
+        </div>
+        <div class="menu-box">
+            <div class="menu-top-box">
+                <span class="menu-top-box-text">
+                    <a href="">注册</a>
+                    <a href="">登录</a>
+                </span>
+                <div class="menu-top-box-img"><img src="../image/erweima.jpg" alt="二维码"></div>
+            </div>
+            <div class="menu-top-inner"><ul>
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="./compInfo.html">公司简介</a></li>
+                <li><a href="./product.html">产品中心</a></li>
+                <li><a href="./news.html">新闻资讯</a></li>
+                <li><a href="./join.html">招商联盟</a></li>
+            </ul></div>
+        </div>
+
+    </div>
+</div>
+<!-- 注册窗口 -->
+<div id="register" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center">注册</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" id="reg-form" action="{:url('index/index/register')}">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input name="mobile" id="mobile" class="form-control" type="text" placeholder="手机号">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12" style="margin: 15px 0;">
+                            <input name="password" id="password" class="form-control" type="password" placeholder="密码">
+                        </div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <div class="col-sm-6">
+                            <input name="verify_code" id="verify_code" class="form-control" type="text" placeholder="验证码" />
+                        </div>
+                        <div class="col-sm-6">
+                            <a class="code get-code" href="javascript:;"> 获取验证码</a>
+                            <a class="code countdown hide">60s</a>
+                        </div>
+                    </div>
+                    <div class="form-group checkbox">
+                        <div class="col-sm-12">
+                            <label>
+                                <input type="checkbox"> 我已阅读并接受<a>《服务条款协议》</a>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" type="submit">提交</button>
+                    </div>
+                    <!--<a href="" data-toggle="modal" data-dismiss="modal" data-target="#login">已有账号？点我登录</a>-->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 登录窗口 -->
+<div id="login" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center">登录</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-group" id="login-form" action="{:url('index/index/login')}">
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <input name="mobiles" id="mobiles" class="form-control" type="text" placeholder="手机号">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12" style="    margin: 15px 0;">
+                            <input name="passwords" id="passwords" class="form-control" type="password" placeholder="密码">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" type="submit">登录</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="uiContainer container-all">
+    <div class="swiper-box">
+        <div class="swiper-box-line"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-box-img"><img src="../image/33.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-box-img"><img src="../image/33.png" alt=""></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-box-img"><img src="../image/33.png" alt=""></div>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-bullets"></div>
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+        <div class="swiper-box-line"></div>
+    </div>
+</div>
+<div class="uiContainer">
+
+    <div class="item">
+        <div class="item-title"><span>产品展示</span></div>
+        <div class="item-box">
+            <div class="item-box-half"><img class="item-box-img1" src="../image/床图片3.jpg" alt="图片"></div>
+            <div class="item-box-half"><img class="item-box-img1" src="../image/床图片3.jpg" alt="图片"></div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="item-title"><span>我们的优势</span></div>
+        <div class="item-box">
+            <p class="item-content">本公司拥有核心的技术团队，与前端技术相结合的产品，并与华中科技大学共同研发最新最强大的光纤振动“黑科技”打造一系列光纤智能终端，第一代光纤产品——智能光纤床垫，从睡眠管理切入慢病管理领域，鼾症、离床等数据的实时监测及预警。</p>
+        </div>
+    </div>
+
+</div>
+<div class="uiContainer container-all">
+     <div class="item bgColor2 news">
+        <div class="item-title"><span>企业新闻</span></div>
+        <div class="item-box">
+            <div class="item-box-half">
+                <img class="item-box-img2" src="../image/微信图片_20181207101719.jpg" alt="图片">
+                <div class="item-img-text-box">
+                    <div class="img-more">更多 》</div>
+                    <div class="img-box-title">
+                        <span>公司新闻</span>
+                        <ul>
+                        <li ><a href="#" class="img-box-text-item ellipsis">这次，凯瑞普代表[中国光谷]参加武汉老博会老服务等等</a></li>
+                        <li><a href="#" class="img-box-text-item ellipsis">这次，凯瑞普代表[中国光谷]参加武汉老博会老服务等等</a></li>
+                        <li><a href="#" class="img-box-text-item ellipsis">这次，凯瑞普代表[中国光谷]参加武汉老博会老服务等等</a></li>
+                        <li><a href="#" class="img-box-text-item ellipsis">这次，凯瑞普代表[中国光谷]参加武汉老博会老服务等等</a></li>
+                        <li><a href="#" class="img-box-text-item ellipsis">这次，凯瑞普代表[中国光谷]参加武汉老博会老服务等等</a></li>
+                    </ul></div>
+                </div>
+            </div>
+            <div class="item-box-half">
+                <img class="item-box-img2" src="../image/微信图片_20181207101719.jpg" alt="图片">
+                <div class="item-img-text-box">
+                    <div class="img-more">更多 》</div>
+                    <div class="img-box-title">
+                        <span>公司新闻</span>
+                    <ul>
+                        <li><a href="#" class="img-box-text-item ellipsis">这次，凯瑞普代表[中国光谷]参加武汉老博会老服务等等</a></li>
+                        <li><a href="#" class="img-box-text-item ellipsis">这次，凯瑞普代表[中国光谷]参加武汉老博会老服务等等</a></li>
+                        <li><a href="#" class="img-box-text-item ellipsis">这次，凯瑞普代表[中国光谷]参加武汉老博会老服务等等</a></li>
+                        <li><a href="#" class="img-box-text-item ellipsis">这次，凯瑞普代表[中国光谷]参加武汉老博会老服务等等</a></li>
+                        <li><a href="#" class="img-box-text-item ellipsis">这次，凯瑞普代表[中国光谷]参加武汉老博会老服务等等</a></li>
+                    </ul></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-box">
+        <ul>
+            <li>公司地址：上海正品科贸有限公司</li>
+            <li>公司邮件：shzpkm@126.com</li>
+            <li>工作时间：9：00-12：00  13：00-18：00</li>
+            <li>公司电话：021-65666029</li>
+            <li class="logo_item"><img src="../image/logo1.png" alt="logo"></li>
+        </ul>
+    </div>
+</div>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../js/index.js"></script>
+<script>
+    // 轮播
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        nextButton: ".swiper-button-next",
+        prevButton: ".swiper-button-prev",
+        paginationClickable: true,
+        loop: true,
+        autoplay: 3000,
+    });
+</script>
+
+</body>
+</html>
