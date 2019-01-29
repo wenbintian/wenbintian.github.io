@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8;" />
+  <title>账户服务</title>
+  <meta name="keywords" content="首页">
+  <meta name="description" content="首页">
+  <link rel="stylesheet" href="css/public/base.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/accountInfo.css" />
+</head>
+<body>
+<div class="head-wrap">
+  <div class="head">
+    <a href="index.html" class="img-box"><img src="images/logo.png" width="148" height="59" alt=""></a>
+    <div class="nav">
+      <a class="nav-li cur" href="index.html">首页</a>
+      <a class="nav-li" href="typeChoose.html">机型库</a>
+      <a class="nav-li" href="modelOverview.html">企业库</a>
+      <a class="nav-li" href="modelCompar.html">机场库</a>
+      <a class="nav-li" href="index.html">文库</a>
+      <a class="nav-li " href="news.html">新闻</a>
+      <a class="nav-li" href="accountInfo.html">我们</a>
+    </div>
+    <div class="info">
+      <a class="msg" href="javascript:;"><i class="msg-num">3</i></a>
+      <a id="jsLogin" class="login" href="javascript:;">登 录</a>
+      <a id="jsReg" class="reg" href="javascript:;">免费注册</a>
+      <a class="wechat" href="javascript:;">微信公众号
+        <img class="wechat_img" src="./images/icon-ewm.jpg" alt="二维码">
+      </a>
+    </div>
+  </div>
+</div>
+<!-- 内容主体模块 start -->
+<div class="main account-box">
+  <div class="item">
+    <div class="account-info-inner">
+      <img src="./images/head.png" alt="头像" class="account-head">
+      <div class="account-info">
+        <ul>
+          <li class="account-item font-big item-name">简单吗</li>
+          <li class="account-item color2">浏览文档记录：<a href="./previewFile.html" class="color4">3</a></li>
+          <li class="account-item item-name color1">账号等级：体验版 <button class="item-btn">升级</button></li>
+          <li class="account-item color2">翼  币：<span class="color3">0</span><button class="item-btn money">充值</button></li>
+        </ul>
+      </div>
+    </div>
+    <div class="account-info-detail" id="accountInfo">
+      <ul>
+        <li class="account-detail-item"><span class="item-label">用&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名：</span><span class="item-text">剑</span></li>
+        <li class="account-detail-item"><span class="item-label">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span><span class="item-text">剑</span></li>
+        <li class="account-detail-item"><span class="item-label">联系地址：</span><span class="item-text">剑</span></li>
+        <li class="account-detail-item"><span class="item-label">公司/学校：</span><span class="item-text">剑</span></li>
+        <li class="account-detail-item"><span class="item-label">职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位：</span><span class="item-text">剑</span></li>
+        <li class="account-detail-item"><span class="item-label">Q&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q：</span><span class="item-text">剑</span></li>
+        <li class="account-detail-item"><span class="item-label">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</span><span class="item-text">剑</span></li>
+        <li class="account-detail-item"><span class="item-label">联系电话：</span><span class="item-text">剑</span></li>
+        <li class="account-detail-item"><span class="item-label">邀&nbsp;请&nbsp;&nbsp;码：</span><span class="item-text">剑</span></li>
+      </ul>
+    </div>
+    <div class="account-detail-btn" id="accountDetailBtn">
+      <button class="account-btn btn-edit">修改资料</button>
+      <button class="account-btn btn-toggle show">收起详细资料</button>
+    </div>
+  </div>
+  <!--账号的详细信息-->
+  <div class="item" id="accountDetailInfo">
+    <div class="menu-box menuBox">
+      <ul class="menu-box-inner">
+        <li class="menu-item active" data-id="0"><span class="menu-text">账号服务</span></li>
+        <li class="menu-item" data-id="1"><span class="menu-text">交易明细</span></li>
+        <li class="menu-item" data-id="2"><span class="menu-text">账号安全</span></li>
+      </ul>
+    </div>
+    <div class="menu-detail menuDetail">
+      <div class="menu-detail-main menu-detail-server active" data-id="0">
+        <div class="menu-detail__item">
+          <div class="item-inner icon menu-detail__icon icon1"></div>
+          <div class="item-inner menu-detail__main">
+            <div class="menu-detail__tt">级别名称</div>
+            <div class="menu-detail__ct">一句话描述一句话描述一句话描述一句话描述一句话描述</div>
+          </div>
+          <div class="item-inner menu-detail__btn"><button class="detail-btn">申请开通</button></div>
+        </div>
+        <div class="menu-detail__item">
+          <div class="item-inner icon menu-detail__icon icon2"></div>
+          <div class="item-inner menu-detail__main">
+            <div class="menu-detail__tt">级别名称</div>
+            <div class="menu-detail__ct">一句话描述一句话描述一句话描述一句话描述一句话描述</div>
+          </div>
+          <div class="item-inner menu-detail__btn"><button class="detail-btn">申请开通</button></div>
+        </div>
+      </div>
+      <div class="menu-detail-main menu-detail-change" data-id="1">
+        <div class="menu-change-tt">
+          <div class="menu-change-select"></div>
+          <select class="menu-change-select" name="a" id="menuChangeDate">
+            <option>2017年5月</option>
+            <option>2017年6月</option>
+            <option>2017年7月</option>
+          </select>
+          <span class="menu-change-text">共充值 0 翼币</span>
+        </div>
+        <table class="common_table">
+          <thead>
+          <tr>
+            <th>订单号</th>
+            <th>商品名</th>
+            <th>单价</th>
+            <th>数量</th>
+            <th>交易金额</th>
+            <th>支付方式</th>
+            <th>交易状态</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>订单号</td>
+            <td>商品名</td>
+            <td>单价</td>
+            <td>数量</td>
+            <td>交易金额</td>
+            <td>支付方式</td>
+            <td>交易状态</td>
+          </tr>
+          </tbody>
+        </table>
+        <div class="menu-change-page">
+          <div class="common_page" id="changPage">
+            <span class="page_item next">></span>
+            <span class="page_item go">GO</span>
+            <span class="page_item total">/2</span>
+            <input class="page_item current_page" type="text" value="1"/>
+            <span class="page_item prev"><</span>
+          </div>
+        </div>
+      </div>
+      <div class="menu-detail-main menu-detail-server safe_class" data-id="2">
+        <div class="menu-detail__item">
+          <div class="item-inner icon menu-detail__icon icon1"></div>
+          <div class="item-inner menu-detail__name">邮箱账号</div>
+          <div class="item-inner menu-detail__main">
+            <div class="menu-detail__ct">未绑定邮箱，绑定后可使用该邮箱直接登录</div>
+          </div>
+          <div class="item-inner menu-detail__btn"><button class="detail-btn">绑定</button></div>
+        </div>
+        <div class="menu-detail__item">
+          <div class="item-inner icon menu-detail__icon icon2"></div>
+          <div class="item-inner menu-detail__name">手机账号</div>
+          <div class="item-inner menu-detail__main">
+            <div class="menu-detail__ct">未绑定手机，绑定后可使用该手机直接登录</div>
+          </div>
+          <div class="item-inner menu-detail__btn"><button class="detail-btn">绑定</button></div>
+        </div>
+        <div class="menu-detail__item">
+          <div class="item-inner icon menu-detail__icon icon2"></div>
+          <div class="item-inner menu-detail__name">登录密码</div>
+          <div class="item-inner menu-detail__main">
+            <div class="menu-detail__ct">密码要求至少包含字母，符号或数字中的两项且长度超过6位</div>
+          </div>
+          <div class="item-inner menu-detail__btn"><button class="detail-btn">修改</button></div>
+        </div>
+        <div class="menu-detail__item">
+          <div class="item-inner icon menu-detail__icon icon1"></div>
+          <div class="item-inner menu-detail__name">实名认证</div>
+          <div class="item-inner menu-detail__main">
+            <div class="menu-detail__ct">实名认证用于翼趣航空身份认证</div>
+          </div>
+          <div class="item-inner menu-detail__btn"><button class="detail-btn">认证</button></div>
+        </div>
+        <div class="menu-detail__item">
+          <div class="item-inner icon menu-detail__icon icon1"></div>
+          <div class="item-inner menu-detail__name">QQ账号</div>
+          <div class="item-inner menu-detail__main">
+            <div class="menu-detail__ct">未绑定</div>
+          </div>
+          <div class="item-inner menu-detail__btn"><button class="detail-btn">绑定</button></div>
+        </div>
+        <div class="menu-detail__item">
+          <div class="item-inner icon menu-detail__icon icon1"></div>
+          <div class="item-inner menu-detail__name">微博账号</div>
+          <div class="item-inner menu-detail__main">
+            <div class="menu-detail__ct">未绑定</div>
+          </div>
+          <div class="item-inner menu-detail__btn"><button class="detail-btn">绑定</button></div>
+        </div>
+        <div class="menu-detail__item">
+          <div class="item-inner icon menu-detail__icon icon1"></div>
+          <div class="item-inner menu-detail__name">微信账号</div>
+          <div class="item-inner menu-detail__main">
+            <div class="menu-detail__ct">未绑定</div>
+          </div>
+          <div class="item-inner menu-detail__btn"><button class="detail-btn">绑定</button></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- 内容主体模块 end -->
+<!-- 底部模块 start -->
+<div class="foot" id="footBox">
+  <div class="foot-wrap">
+    <div class="info clearfix">
+      <div class="w1 fl">
+        <div><img src="images/logo.png" alt=""></div>
+        <a class="btn qq" href="javascript:;">业 务 咨 询</a>
+        <a class="btn weixin" href="javascript:;">售 后 服 务</a>
+      </div>
+      <div class="w2 fl">
+        <div class="contact fl">
+          <h2 class="tip">联系我们</h2>
+          <div class="tel common">021-61525172</div>
+          <div class="email common">409508623@qq.com</div>
+          <div class="ads common">上海浦东新区浦东南路655号世纪广场17D</div>
+        </div>
+        <div class="code fr">
+          <div class="code-box">
+            <img class="ewm" src="images/icon-ewm.jpg" width="94" height="94" alt="">
+            <img src="images/icon-ewm.jpg" width="94" height="94" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="w3 fr">
+        <div class="data-box">
+          <h2 class="tip">数据</h2>
+          <div class="nav-box">
+            <a class="nav" href="#">机型库</a>
+            <a class="nav" href="#">企业库</a>
+            <a class="nav" href="#">机场库</a>
+            <a class="nav" href="#">文库</a>
+            <a class="nav" href="#">成为会员</a>
+            <a class="nav" href="#">会员纠错</a>
+          </div>
+          <div class="link-box">
+            <a class="link">友情链接</a>
+            <i class="arrow"></i>
+
+            <div class="link-box-detail">
+              <ul>
+                <li class="link-box-item"><a href="#">淘宝</a></li>
+                <li class="link-box-item"><a href="#">天猫</a></li>
+                <li class="link-box-item"><a href="#">支付宝</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy-wrap">
+    <div class="copy">
+      <div class="fl">Copyright C 2017 上海翼趣航空咨询有限公司 版权所有 沪ICP050XXXXX号</div>
+      <div class="share fr">
+        <span class="fl">分享到：</span>
+        <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--底部模块 end -->
+<!--修改资料-->
+<div class="common_dlg_edit" id="editInfoDlg">
+  <div class="common_dlg_edit_box">
+    <div class="mask"></div>
+    <div class="common_edit_inner">
+      <div class="common_title">
+        基本信息<span class="common_font_small">（翼趣航空将会对您的所有信息严格保密，清放心填写）</span>
+        <i class="common_close icon"></i>
+      </div>
+      <div class="common_edit_form">
+        <ul>
+          <li class="common_form_item">
+            <span class="common_form_label"><span class="label__inner required">用户名</span></span>
+            <input class="common_form_text" type="text" name="username" value=""/>
+          </li>
+          <li class="common_form_item">
+            <span class="common_form_label"><span class="label__inner">性别</span></span>
+            <span class="common_form_block">
+              <input class="common_form_radio icon" type="radio" name="sex" checked value="男"/>男
+            </span>
+            <span class="common_form_block">
+              <input class="common_form_radio icon" type="radio" name="sex" value="女"/>女
+            </span>
+          </li>
+          <li class="common_form_item">
+            <span class="common_form_label"><span class="label__inner">联系地址</span></span>
+            <select class="common_form_select" name="">
+              <option value="" selected disabled style="display:none">请选择省</option>
+              <option value="福建">福建</option>
+              <option value="广东">广东</option>
+            </select>
+            <select class="common_form_select" name="" >
+              <option value="" selected disabled style="display:none">请选择市</option>
+              <option value="福建">福建</option>
+              <option value="广东">广东</option>
+            </select>
+            <select class="common_form_select" name="" >
+              <option value="" selected disabled style="display:none">请选择县</option>
+              <option value="福建">福建</option>
+              <option value="广东">广东</option>
+            </select>
+          </li>
+          <li class="common_form_item">
+            <span class="common_form_label"><span class="label__inner"></span></span>
+            <input class="common_form_text" type="text" name="addressinfo" />
+          </li>
+          <li class="common_form_item">
+            <span class="common_form_label"><span class="label__inner">公司/学校</span></span>
+            <input class="common_form_text" type="text" name="school" value=""/>
+          </li>
+
+          <li class="common_form_item">
+            <span class="common_form_label"><span class="label__inner required">职位</span></span>
+            <input class="common_form_text" type="text" name="work" value=""/>
+          </li>
+          <li class="common_form_item">
+            <span class="common_form_label"><span class="label__inner">QQ</span></span>
+            <input class="common_form_text" type="text" name="qq" value=""/>
+          </li>
+          <li class="common_form_item">
+            <span class="common_form_label"><span class="label__inner required">邮箱</span></span>
+            <input class="common_form_text" type="text" name="email" value=""/>
+          </li>
+          <li class="common_form_item">
+            <span class="common_form_label"><span class="label__inner required">联系电话</span></span>
+            <input class="common_form_text" type="text" name="phone" value=""/>
+          </li>
+          <li class="common_form_item">
+            <span class="common_form_label"><span class="label__inner">邀请码</span></span>
+            <input class="common_form_text" type="text" name="username" value=""/>
+          </li>
+        </ul>
+      </div>
+      <div class="common_edit_btn">
+        <button class="form_btn btn_cancel">取消</button>
+        <button class="form_btn btn_sure">确定</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- 注册，登录弹窗 s -->
+<div id="alert-box"></div>
+<!-- 注册，登录弹窗 e -->
+<script src="js/public/jquery-1.8.3.js"></script>
+<script src="js/public/layer/layer.js"></script>
+<script src="js/common.js"></script>
+<script src="js/accountInfo.js"></script>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["qzone","tsina","douban","sqq"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+.model_comparison_box{
+
+  h5{
+    padding:12px 0; font-size: 21px;
+  }
+  .table-title{
+    color: #0070c0;
+    padding:12px 0;
+    font-size: 21px;
+  }
+  .table_box{padding: 25px;
+    tr td{width: 20%;}
+    .common_nav{margin-right: 20px; float: right;}
+  }
+  .model_comparison_table{
+    .table_model_spl_wrap td{
+      width: 238px;
+      position: relative;
+    }
+    .planr_img_icon{
+      background-position:-61px -20px;
+      width: 14px;
+      height: 14px;
+      display: block;
+      position: absolute;
+      top:22px;
+      right: 12px;
+      cursor:pointer;
+    }
+    .planr_img_icon:hover{
+      background-position:-83px -20px;
+    }
+    .add_plane{
+      width: 218px;
+      height: 144.5px;
+      margin: 9px auto;
+      background: #eee;
+      position: relative;
+      .add_icon{
+        width: 55px;
+        height: 55px;
+        display: block;
+        background-position: -152px 0;
+        position:absolute ;
+        top: 50%;
+        left: 50%;
+        margin-top:-27px;
+        margin-left:-27px;
+        cursor: pointer;
+      }
+    }
+    .table_model_spl_wrap td:nth-child(1){
+      width: 188px;
+    }
+    .table_model_spl_wrap:nth-child(1){
+      height: 185px;
+    }
+    .table_model_spl_wrap:nth-child(2){
+      height: 133px;
+    }
+    .table_model_spl_wrap:nth-child(3){
+      color: #000;
+      height: 64px;
+    }
+    .plane_img{
+      width: 218px;
+    }
+    .table_model_spl{
+      color: #000;
+
+    }
+    .plane_select_wrap {
+      width: 220px; line-height: 26px; text-align: left;
+      height: 26px; background: url("../images/icon-sort37.png") no-repeat 98% center; background-size: 8px 8px;
+      cursor: pointer;
+      border-radius: 5px;
+      color: #676767;
+      border:1px solid #e2e2e2;
+      text-indent: 7px;
+      margin: 0 5px;
+      display: block;
+    }
+    .plane_input_wrap{
+      width: 218px; cursor: pointer;
+      height: 22px;line-height: 22px; text-align: left;
+      border-radius: 5px;
+      color: #676767;
+      border:1px solid #e2e2e2;
+      text-indent: 10px;
+      margin: 11px 5px 0;
+      display: block;
+    }
+    .btn{
+      width: 105px;
+      height: 25px;
+      border-radius: 5px;
+      background: #fff;
+      margin-top: 11px;
+      border:1px solid #e2e2e2;
+      vertical-align: middle;
+    }
+    .delete_btn{
+      color: #676767;
+    }
+    .right_left_btn_wrap{
+      box-sizing: border-box;
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    .left_btn{
+      width:50px;
+      height: 22px;
+      display: block;
+      float: left;
+      cursor: pointer;
+      background-position:-206px -2px;
+    }
+    .right_btn{
+      width:50px;
+      height: 22px;
+      display: block;
+      float: left;
+      cursor: pointer;
+      background-position: -253px -2px;
+    }
+    .btn_icon_middle{
+      margin-left: 27px;
+    }
+    td:nth-child(1){
+      text-align: left;
+      text-indent: 13px;
+      width: 189px;
+    }
+    .tbody_item{
+      background: #3d93dc;
+      color: #fff;
+      font-size: 21px;
+    }
+  }
+  .tips{
+    padding:21px 0 2px 0;
+  }
+  .slider_wrap{
+    text-align: left;
+    width: 218px;
+    min-height: 250px;
+    display: block;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    margin-left: 12px;
+    border: 1px solid #eee;
+    display: none;
+    position: absolute;
+    z-index:9;
+
+    .slider-content{
+      text-indent: 20px;
+    }
+  }
+}

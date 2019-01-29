@@ -1,0 +1,24 @@
+.content{background: #fff;}
+.content .top-img-box{height:600px;background: linear-gradient(to bottom, #3e5692, #add1f3);}
+.top-img-box .top-img{height: 490px;width: 100%;margin: 55px 0;}
+.title{font-size: 30px;text-align: center;padding: 60px 0;}
+.product-crumbs-title{font-size: 24px;border-bottom: #666 1px solid;padding-bottom: 25px;margin-bottom:30px;}
+.product-box{padding: 52px 35px 50px 0;overflow: hidden;}
+.product-box .left-tabs{width: 255px;padding: 0 20px;box-sizing: border-box;float: left;}
+.product-box .left-tabs-item{margin:15px 0;border: 2px solid #fff;padding-left:18px;cursor: pointer;line-height: 1;}
+.product-box .left-tabs-item:hover{border-left-color: #2a4b7e;}
+.product-box .left-tabs-item.active{border-left-color: #2a4b7e;}
+.product-box .product-content{float: left;width: 945px;padding-left: 35px;box-sizing: border-box;}
+.product-box .product-content-item{overflow: hidden;width: 454px;float: left;padding: 15px 0;}
+.product-box .product-img-box{float: left;}
+.product-box .product-text{float: left;padding-left: 15px;width: 285px;}
+.product-box .product-img-box img{width: 145px;height:110px;}
+.product-box .product-title{margin-bottom: 25px;}
+.product-box .product-des{margin-bottom: 15px;color: #999;}
+.product-box .product-content-item .price{color: #cd0001;}
+.product-box .product-content-item .buy{cursor: pointer; color: #fff;width: 110px;height: 34px;border-radius: 5px;text-align: center;line-height: 34px;background-color: #0073c6;margin-top: 10px;}
+.page-box{overflow: hidden;padding: 60px 20px 60px 0;}
+.page-box ul{overflow: hidden;float: right;}
+.page-box li{float: left;padding-right: 10px;}
+.page-box .page-btn{cursor: pointer;}
+.page-box .page-btn:hover{color: #2a4b7e;}

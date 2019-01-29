@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8;" />
+    <title>机型概况</title>
+    <meta name="keywords" content="机型概况">
+    <meta name="description" content="机型概况">
+    <link rel="stylesheet" href="css/public/base.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/public/slidernav.css" />
+    <link rel="stylesheet" href="css/modelOverview.css" />
+
+</head>
+<body>
+<div class="head-wrap">
+    <div class="head">
+        <a href="index.html" class="img-box"><img src="images/logo.png" width="148" height="59" alt=""></a>
+        <div class="nav">
+            <a class="nav-li cur" href="index.html">首页</a>
+            <a class="nav-li" href="typeChoose.html">机型库</a>
+            <a class="nav-li" href="modelOverview.html">企业库</a>
+            <a class="nav-li" href="modelCompar.html">机场库</a>
+            <a class="nav-li" href="index.html">文库</a>
+            <a class="nav-li " href="news.html">新闻</a>
+            <a class="nav-li" href="accountInfo.html">我们</a>
+        </div>
+        <div class="info">
+            <a class="msg" href="javascript:;"><i class="msg-num">3</i></a>
+            <a id="jsLogin" class="login" href="javascript:;">登 录</a>
+            <a id="jsReg" class="reg" href="javascript:;">免费注册</a>
+            <a class="wechat" href="javascript:;">微信公众号
+                <img class="wechat_img" src="./images/icon-ewm.jpg" alt="二维码">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="banner" id="bannerBox">
+    <div class="title">通用航空器数据查询平台</div>
+    <ul class="ul-box">
+        <li class="list active" data-placeholder="请输入机型、价格等，多关键字用空格隔开，如“XXX、1万”">全部</li>
+        <li class="list" data-placeholder="请输入机型，如“E.22”">机型</li>
+        <li class="list" data-placeholder="请输入注册号，如“3333”">注册号</li>
+        <li class="list" data-placeholder="请输入运营商，如“某某公司”">运营商</li>
+        <li class="list" data-placeholder="请输入制造商，如“某某公司”">制造商</li>
+        <li class="list" data-placeholder="请输入省份，如“福建省”">省份</li>
+        <li class="list" data-placeholder="请输入出厂价，如“1万”">出厂价</li>
+        <li class="list" data-placeholder="请输入机型类型，如“X”">机型类型</li>
+    </ul>
+    <div class="search-box">
+        <input id="keyword" class="input" type="text" placeholder="请输入机型、价格等，多关键字用空格隔开，如“XXX、1万”">
+        <button id="search" class="btn-search"></button>
+    </div>
+    <div class="hot_search">
+        <div class="hot_search_box">
+            <span>热搜：</span>
+            <ul class="hot_search_ul">
+                <li class="hot_list"><a href="#">阿里巴巴</a></li>
+                <li class="hot_list"><a href="#">淘宝</a></li>
+                <li class="hot_list"><a href="#">小米</a></li>
+            </ul>
+            <span class="hot_toggle">换一批</span>
+        </div>
+    </div>
+</div>
+<!-- 内容主体模块 start -->
+<div class="main model_comparison_box">
+    <div class="item">
+        <div class="overview_title_wrap">
+            <div class="overview_title">
+                <h5>Bell407GX </h5>
+                <p>Bell407GX：轻型单发涡轴直升机 </p>
+            </div>
+            <div class="love_degree">
+                <ul>
+                    <li class="love_degree_item">
+                        <i class="icon love_degree_icon"></i>
+                    </li>
+                    <li class="love_degree_item love_des">
+                        <ul>
+                            <li>我的喜爱度</li>
+                            <li>
+                                <span class="like_item">
+                                    <input class="radio_checked" name="ifLike" type="radio" id="like">
+                                    <i class="radio_like_checked"></i>
+                                    <label for="like" class="like"><i class="like_icon"></i>喜欢</label>
+                                </span>
+                                <span class="like_item">
+                                    <input name="ifLike" type="radio" id="unlike" class="radio_checked unlike_radio">
+                                     <i class="radio_like_checked"></i>
+                                    <label for="unlike" class="unlike"><i class="like_icon unlike_icon"></i>不喜欢</label>
+                                </span>
+                            </li>
+                            <li><p>387人参与， 平均喜爱度 89%</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <i class="overview_icon"></i>
+        </div>
+        <div class="head_bg_wrap">
+            <img src="images/model_overview_bg.png" alt="">
+        </div>
+        <div class="tab_wrap">
+            <ul>
+                <li><a href="#id1">机型概况</a> </li>
+                <li><a href="#id2">技术参数</a></li>
+                <li><a href="#id3">参考图片</a></li>
+                <li>机型对比 </li>
+            </ul>
+        </div>
+        <!--机型概况-->
+        <div class="plane_content" id="planeContent">
+            <h5 class="overview-title" id="id1">机型概况</h5>
+            <button class="plane_content_btn"><a href="./modelCompar.html">+ 对比</a></button>
+            <table class="common_table">
+                <tbody>
+                    <tr>
+                        <td class="plane_cont_name">机型名称 </td>
+                        <td>Bell407GX </td>
+                        <td class="plane_cont_name">绰号</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="plane_cont_name">国内交货含税价 </td>
+                        <td></td>
+                        <td class="plane_cont_name">工厂交货价 </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="plane_cont_name">类别 </td>
+                        <td></td>
+                        <td class="plane_cont_name">级别</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="plane_cont_name">品牌 </td>
+                        <td></td>
+                        <td class="plane_cont_name">母公司</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="plane_cont_name">国别 </td>
+                        <td></td>
+                        <td class="plane_cont_name">座位</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="plane_cont_name">全球机队规模 </td>
+                        <td></td>
+                        <td class="plane_cont_name">中国机队规模 </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="plane_cont_name">研制起始日期 </td>
+                        <td></td>
+                        <td class="plane_cont_name">原型机首飞</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="plane_cont_name">原产地取证时间  </td>
+                        <td></td>
+                        <td class="plane_cont_name">中国取证时间 </td>
+                        <td></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--综述-->
+        <div class="content_box">
+            <h6 class="content_title">>综述</h6>
+            <p class="content_text">Bell407是一款主旋翼为4片桨叶、单发涡轮轴的轻型民用直升机，主要用来替代Bell206L4“远程突击队员”直升机。
+                Bell407采用全复合材料打造的4片主旋翼系统，其结构与美国军方使用的OH-58D类似。Bell407广泛应用于商务飞行、海上飞
+                行、应急救援、警务飞行、新闻采访、航拍等。</p>
+        </div>
+        <!--技术特点-->
+        <div class="content_box">
+            <h6 class="content_title">>技术特点</h6>
+            <p class="content_text">·  贝尔407直升机可实施垂直起落，左右横行、前进及倒退，并能在空中悬停和定点转弯等，因为其具有机身小、飞行灵活的特点，所以适合执行公务、医疗急救、抢险救灾、海洋作业、航拍等。</p>
+            <p class="content_text">·  贝尔-407采用HTS-900新涡轴发动机，功率为680千瓦，发动机总重量增加到2.56吨。燃油装在两个互连的抗坠毁软油箱中，加辅助油箱，载油量比oh-58d有较大增加。它采用低噪声巡航系统，利用全权数字发动机控制系统把旋翼转速降低为巡航转速的90%~93%，从而降低了arh的通场噪声。 </p>
+            <p class="content_text">·  旋翼系统采用全复合材料4桨叶旋翼系统，其结构与OH-58D的类似，两片桨叶尾桨。机身与贝尔-206L-4“远程突击队员”的机身相似，但座舱增宽了0.178m，座舱窗户面积也增大了35%。采用碳纤维尾梁，座舱门窗是平板式的 </p>
+            <p class="content_text">·   贝尔-407采用单旋翼带尾桨布局，采用经过改进的OH-58D的4片桨叶旋翼、尾桨和减速器系统。机体防护有所改善。前机身包括驾驶舱和座舱，空间不拥挤，改善了乘坐舒适性。机身两侧舷窗面积比原型机增加了35%，安装特殊玻璃，增加了舱内采光，扩大了驾驶员和乘员视野。</p>
+        </div>
+        <!--运行历史-->
+        <div class="content_box">
+            <h6 class="content_title">>运行历史</h6>
+            <p class="content_text">·  Bell  made  delivery  of  the  first  producIon  407  at  Heli-­‐Expo,  in  Dallas,  Texas  in  February  1996.  Launch  customers  for  the  aircraT  were  Petroleum Helicopters,  Niagara  Helicopters,  and  Greenland  Air. </p>
+            <p class="content_text">·  On  23  May  2007,  Colin  Bodill  and  Jennifer  Murray  completed  a  record  pole-­‐to-­‐pole  around  the  world  flight  uIlizing  a  standard  Bell  407.  The flight  originated  from  Bell's  facility  at  the  Fort  Worth  Alliance  Airport  on  December  5,  2006.  The  team  flew  about  36,000  miles  (58,000  km)  over 189  days  and  300  flight  hours,  through  34  different  countries.  The  project,  named  Polar  First,  was  performed  in  partnership  with  the  Royal Geographical  Society  to  provide  educaIonal  outreach  to  28  internaIonal  schools,  which were  visited  during  the  trip.  The  project  also  served  as  a fundraiser  for  the  SOS  Children's  Villages. </p>
+            <p class="content_text">·  In  2009  the  Iraqi  Air  Force  ordered  three  Bell  407  armed  scout  helicopters  (similar  to  the  canceled  ARH-­‐70).[14]  A  contract  for  24  addiIonal  Bell 407s  with  an  opIon  for  26  more  was  awarded  in  April  of  that  same  year.[15]  The  U.S.  Army  is  managing  modificaIons  and  installaIon  of  military equipment  on  the  helicopters.[16]  Three  training  T-­‐407s  were  delivered  to  the  Iraqi  Army  in  2010.  Armed  IA-­‐407s  were  delivered  in  eight batches  of  three  aircraT  from  August  2012  to  April  2013.  The  final  Bell  407  for  Iraq  was  delivered  on  3  April  2013.[17]  There  are  30  in  service;  24 armed  scouts,  3  gunships,  and  3  trainers. </p>
+            <p class="content_text">·  In  2009  the  Iraqi  Air  Force  ordered  three  Bell  407  armed  scout  helicopters  (similar  to  the  canceled  ARH-­‐70).[14]  A  contract  for  24  addiIonal  Bell 407s  with  an  opIon  for  26  more  was  awarded  in  April  of  that  same  year.[15]  The  U.S.  Army  is  managing  modificaIons  and  installaIon  of  military equipment  on  the  helicopters.[16]  Three  training  T-­‐407s  were  delivered  to  the  Iraqi  Army  in  2010.  Armed  IA-­‐407s  were  delivered  in  eight batches  of  three  aircraT  from  August  2012  to  April  2013.  The  final  Bell  407  for  Iraq  was  delivered  on  3  April  2013.[17]  There  are  30  in  service;  24 armed  scouts,  3  gunships,  and  3  trainers. </p>
+            <p class="content_text">·  Iraq  is  using  the  IA-­‐407  in  operaIons  against  Islamic  State  militants.  On  8  October  2014,  militants  shot  down  an  IA-­‐407  using  a  shoulder-­‐fired ground-­‐to-­‐air  missile,  killing  the  pilot  and  co-­‐pilot. </p>
+            <p class="content_text">·  200X年，Bell407民用版正式获得中国民航的适航认证（型号认证）</p>
+        </div>
+        <!--机型演化-->
+        <div class="content_box">
+            <h6 class="content_title">>机型演化</h6>
+            <div class="evolution_title_tip">● Bell407 </div>
+            <p class="evolution_content_text">多用途民用直升机，用于替代Bell204L4 </p>
+            <div class="evolution_title_tip">● Bell407 </div>
+            <p class="evolution_content_text">多用途民用直升机，用于替代Bell204L4 </p>
+            <div class="evolution_title_tip">● Bell407 </div>
+            <p class="evolution_content_text">多用途民用直升机，用于替代Bell204L4 </p>
+            <div class="evolution_title_tip">● Bell407 </div>
+            <p class="evolution_content_text">多用途民用直升机，用于替代Bell204L4 </p>
+            <div class="evolution_title_tip">● Bell407 </div>
+            <p class="evolution_content_text">多用途民用直升机，用于替代Bell204L4 </p>
+            <div class="evolution_title_tip">● Bell407 </div>
+            <p class="evolution_content_text">多用途民用直升机，用于替代Bell204L4 </p>
+
+        </div>
+        <!--用户情况-->
+        <div class="content_box">
+            <h6 class="content_title">>用户情况</h6>
+            <div class="evolution_title_tip">● 全球保有量1109架 :</div>
+            <div class="evolution_content_text">
+                <ul>
+                    <li>澳大利亚12  :  悉尼警方2；首都巡逻2；海防队4；海里沃克4。</li>
+                    <li>巴西：</li>
+                </ul>
+                <ul>
+                    <li>美国50：</li>
+                    <li>巴西：</li>
+                </ul>
+            </div>
+            <div class="evolution_title_tip">● 大中华地区保有量28架 </div>
+            <div class="evolution_content_text">
+                <ul>
+                    <li>澳大利亚12  :  悉尼警方2；首都巡逻2；海防队4；海里沃克4。</li>
+                    <li>巴西：</li>
+                </ul>
+                <ul>
+                    <li>美国50：</li>
+                    <li>巴西：</li>
+                </ul>
+            </div>
+
+        </div>
+        <!--技术参数-->
+        <div class="table_box">
+            <h5 class="overview-title" id="id2">技术参数</h5>
+            <table class="common_table model_comparison_table">
+                <tbody>
+                <tr >
+                    <td class="tbody_item" colspan="5">重量</td>
+                </tr>
+                <tr>
+                    <td>空重</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>标配内载</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>标配内载</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>最大起飞重量</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>选装内载</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>最大起飞重量</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>外载</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>最大起飞重量</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>基本标配内载</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>有效载</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr >
+                    <td class="tbody_item" colspan="5">性能</td>
+                </tr>
+                <tr>
+                    <td>不可逾越速度 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>最大巡航速度</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>经济巡航速度</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>最大航程</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>最大巡航时间</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>实用升限</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>有地效悬停 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>无地效悬停 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>爬升率 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>起飞距离 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr >
+                    <td class="tbody_item" colspan="5">发动机</td>
+                </tr>
+                <tr>
+                    <td>发动机型号 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>类型 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>燃料形式 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>平均油耗 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>额定功率 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>额定最大连续功率 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>发动机最大输出功率 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>最大连续输出功率 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr >
+                    <td class="tbody_item" colspan="5">容量</td>
+                </tr>
+                <tr>
+                    <td>座位 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>客舱底面积 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>客舱容积 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>后货仓/行李舱容积</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>驾驶舱容积 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>标准油箱 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>副油箱（选装）</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr >
+                    <td class="tbody_item" colspan="5">尺寸</td>
+                </tr>
+                <tr>
+                    <td>机身高度 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>机身长度 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>全长（机身+主旋翼）</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>机身宽</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>主旋翼直径 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>翼展</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>外载</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>轮距或起落架间距 </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <!--参考图片-->
+        <div class="reference_picture" id="referencePicture">
+            <div class="reference_picture_tab_wrap">
+                <h5 class="overview-title reference_picture_title" id="id3">参考图片</h5>
+                <ul class="reference_picture_tab">
+                    <li>外观图</li>
+                    <li class="cur">内视图</li>
+                    <li>尺寸图</li>
+                </ul>
+            </div>
+            <div class="ref_pic_wrap">
+                <div class="ref_pic_left">
+                    <img src="images/pic_img1.jpg" alt="">
+                </div>
+                <div class="ref_pic_right">
+                    <img src="images/pic_img2.jpg" alt="">
+                    <img src="images/pic_img2.jpg" alt="">
+                    <img src="images/pic_img2.jpg" alt="">
+                    <img src="images/pic_img2.jpg" alt="">
+                    <img src="images/pic_img2.jpg" alt="">
+                    <img src="images/pic_img2.jpg" alt="">
+                    <img src="images/pic_img2.jpg" alt="">
+                    <img src="images/pic_img2.jpg" alt="">
+                    <img src="images/pic_img2.jpg" alt="">
+                    <img src="images/pic_img2.jpg" alt="">
+                    <img src="images/pic_img2.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!--推荐阅读-->
+        <div class="reading_box">
+            <div class="reading_box_tab_wrap">
+                <h5 class="overview-title reading_box_title">推荐阅读</h5>
+                <div class="reading_more"><a href="#">>更多</a></div>
+            </div>
+            <div class="reading_content">
+                <div class="reading_item">
+                    <ul>
+                        <li><img src="images/pic_img2.jpg" alt=""></li>
+                        <li>
+                            <p class="read_title">bell407GXZ在中东售出20架 用于通航作业</p>
+                            <p class="read_text">美国贝尔公司为此举办了酒会庆祝</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reading_item">
+                    <ul>
+                        <li><img src="images/pic_img2.jpg" alt=""></li>
+                        <li>
+                            <p class="read_title">bell407GXZ在中东售出20架 用于通航作业</p>
+                            <p class="read_text">美国贝尔公司为此举办了酒会庆祝</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reading_item">
+                    <ul>
+                        <li><img src="images/pic_img2.jpg" alt=""></li>
+                        <li>
+                            <p class="read_title">bell407GXZ在中东售出20架 用于通航作业</p>
+                            <p class="read_text">美国贝尔公司为此举办了酒会庆祝</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reading_item">
+                    <ul>
+                        <li><img src="images/pic_img2.jpg" alt=""></li>
+                        <li>
+                            <p class="read_title">bell407GXZ在中东售出20架 用于通航作业</p>
+                            <p class="read_text">美国贝尔公司为此举办了酒会庆祝</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reading_item">
+                    <ul>
+                        <li><img src="images/pic_img2.jpg" alt=""></li>
+                        <li>
+                            <p class="read_title">bell407GXZ在中东售出20架 用于通航作业</p>
+                            <p class="read_text">美国贝尔公司为此举办了酒会庆祝</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reading_item">
+                    <ul>
+                        <li><img src="images/pic_img2.jpg" alt=""></li>
+                        <li>
+                            <p class="read_title">bell407GXZ在中东售出20架 用于通航作业</p>
+                            <p class="read_text">美国贝尔公司为此举办了酒会庆祝</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+<!-- 内容主体模块 end -->
+<!-- 底部模块 start -->
+<div class="foot" id="footBox">
+    <div class="foot-wrap">
+        <div class="info clearfix">
+            <div class="w1 fl">
+                <div><img src="images/logo.png" alt=""></div>
+                <a class="btn qq" href="javascript:;">业 务 咨 询</a>
+                <a class="btn weixin" href="javascript:;">售 后 服 务</a>
+            </div>
+            <div class="w2 fl">
+                <div class="contact fl">
+                    <h2 class="tip">联系我们</h2>
+                    <div class="tel common">021-61525172</div>
+                    <div class="email common">409508623@qq.com</div>
+                    <div class="ads common">上海浦东新区浦东南路655号世纪广场17D</div>
+                </div>
+                <div class="code fr">
+                    <div class="code-box">
+                        <img class="ewm" src="images/icon-ewm.jpg" width="94" height="94" alt="">
+                        <img src="images/icon-ewm.jpg" width="94" height="94" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w3 fr">
+                <div class="data-box">
+                    <h2 class="tip">数据</h2>
+                    <div class="nav-box">
+                        <a class="nav" href="#">机型库</a>
+                        <a class="nav" href="#">企业库</a>
+                        <a class="nav" href="#">机场库</a>
+                        <a class="nav" href="#">文库</a>
+                        <a class="nav" href="#">成为会员</a>
+                        <a class="nav" href="#">会员纠错</a>
+                    </div>
+                    <div class="link-box">
+                        <a class="link">友情链接</a>
+                        <i class="arrow"></i>
+
+                        <div class="link-box-detail">
+                            <ul>
+                                <li class="link-box-item"><a href="#">淘宝</a></li>
+                                <li class="link-box-item"><a href="#">天猫</a></li>
+                                <li class="link-box-item"><a href="#">支付宝</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copy-wrap">
+        <div class="copy">
+            <div class="fl">Copyright C 2017 上海翼趣航空咨询有限公司 版权所有 沪ICP050XXXXX号</div>
+            <div class="share fr">
+                <span class="fl">分享到：</span>
+                <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部模块 end -->
+<!-- 注册，登录弹窗 s -->
+<div id="alert-box"></div>
+<!-- 注册，登录弹窗 e -->
+<script src="js/public/jquery-1.8.3.js"></script>
+<script src="js/public/layer/layer.js"></script>
+<script src="js/common.js"></script>
+<script src="js/modelOverview.js"></script>
+<script type="text/javascript" src="js/public/slidernav.js"></script>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["qzone","tsina","douban","sqq"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+</body>
+</html>

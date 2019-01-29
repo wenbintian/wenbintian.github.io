@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8;" /> 
+        <title>机型筛选</title>
+        <meta name="keywords" content="机型筛选">
+        <meta name="description" content="机型筛选">
+        <link rel="stylesheet" href="css/public/base.css" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/public/swiper.min.css" />
+        <link rel="stylesheet" href="css/typeChoose.css" />
+    </head>
+    <body>
+    <div class="head-wrap">
+        <div class="head">
+            <a href="index.html" class="img-box"><img src="images/logo.png" width="148" height="59" alt=""></a>
+            <div class="nav">
+                <a class="nav-li cur" href="index.html">首页</a>
+                <a class="nav-li" href="typeChoose.html">机型库</a>
+                <a class="nav-li" href="modelOverview.html">企业库</a>
+                <a class="nav-li" href="modelCompar.html">机场库</a>
+                <a class="nav-li" href="index.html">文库</a>
+                <a class="nav-li " href="news.html">新闻</a>
+                <a class="nav-li" href="accountInfo.html">我们</a>
+            </div>
+            <div class="info">
+                <a class="msg" href="javascript:;"><i class="msg-num">3</i></a>
+                <a id="jsLogin" class="login" href="javascript:;">登 录</a>
+                <a id="jsReg" class="reg" href="javascript:;">免费注册</a>
+                <a class="wechat" href="javascript:;">微信公众号
+                    <img class="wechat_img" src="./images/icon-ewm.jpg" alt="二维码">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="banner" id="bannerBox">
+        <div class="title">通用航空器数据查询平台</div>
+        <ul class="ul-box">
+            <li class="list active" data-placeholder="请输入机型、价格等，多关键字用空格隔开，如“XXX、1万”">全部</li>
+            <li class="list" data-placeholder="请输入机型，如“E.22”">机型</li>
+            <li class="list" data-placeholder="请输入注册号，如“3333”">注册号</li>
+            <li class="list" data-placeholder="请输入运营商，如“某某公司”">运营商</li>
+            <li class="list" data-placeholder="请输入制造商，如“某某公司”">制造商</li>
+            <li class="list" data-placeholder="请输入省份，如“福建省”">省份</li>
+            <li class="list" data-placeholder="请输入出厂价，如“1万”">出厂价</li>
+            <li class="list" data-placeholder="请输入机型类型，如“X”">机型类型</li>
+        </ul>
+        <div class="search-box">
+            <input id="keyword" class="input" type="text" placeholder="请输入机型、价格等，多关键字用空格隔开，如“XXX、1万”">
+            <button id="search" class="btn-search"></button>
+        </div>
+        <div class="hot_search">
+            <div class="hot_search_box">
+                <span>热搜：</span>
+                <ul class="hot_search_ul">
+                    <li class="hot_list"><a href="#">阿里巴巴</a></li>
+                    <li class="hot_list"><a href="#">淘宝</a></li>
+                    <li class="hot_list"><a href="#">小米</a></li>
+                </ul>
+                <span class="hot_toggle">换一批</span>
+            </div>
+        </div>
+    </div>
+    <!-- 内容主体模块 start -->
+    <div class="main type-choose" id="typeChooseMain">
+        <div class="item">
+            <ul class="type-choose-box">
+                <li class="type-choose-li">
+                    <a href="#">
+                        <span class="type-choose-tip"></span>
+                        <div class="type-choose-img"></div>
+                        <div class="type-choose-text">BELL525取得EASA认证</div>
+                    </a>
+                </li>
+                <li class="type-choose-li">
+                    <a href="#">
+                        <span class="type-choose-tip"></span>
+                        <div class="type-choose-img"></div>
+                        <div class="type-choose-text">BELL525取得EASA认证</div>
+                    </a>
+                </li>
+                <li class="type-choose-li">
+                    <a href="#">
+                        <span class="type-choose-tip"></span>
+                        <div class="type-choose-img"></div>
+                        <div class="type-choose-text">BELL525取得EASA认证</div>
+                    </a>
+                </li>
+                <li class="type-choose-li">
+                    <a href="#">
+                        <span class="type-choose-tip"></span>
+                        <div class="type-choose-img"></div>
+                        <div class="type-choose-text">BELL525取得EASA认证</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="item">
+            <div class="type-choose-box">
+                <div class="type-choose-tt">
+                    <span class="type-choose-tt-text">已选条件</span>
+                    <div class="type-choose-tt-min">
+                        <span class="type-choose-tt-btn">直升机<i class="type-choose-tt-icon"></i></span>
+                        <span class="type-choose-tt-btn">100-500万元<i class="type-choose-tt-icon"></i></span>
+                    </div>
+                </div>
+                <div class="type-choose-item">
+                    <span class="type-choose-item-text">价格</span>
+                    <div class="type-choose-item-main">
+                        <ul>
+                            <li>全部</li>
+                            <li>100万以下</li>
+                            <li>100-500万</li>
+                            <li>500-1000万</li>
+                            <li class="selected">1000-2000万</li>
+                            <li>2000-3000万</li>
+                            <li>3000-5000万</li>
+                            <li>5000-10000万</li>
+                            <li>1亿以上</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="type-choose-item">
+                    <span class="type-choose-item-text">类别</span>
+                    <div class="type-choose-item-main">
+                        <ul>
+                            <li>
+                                <img class="type-choose-item-img" src="./images/icon-nav1.jpg" alt="">
+                                <div class="type-choose-detail">全部</div>
+                            </li>
+                            <li class="selected">
+                                <img class="type-choose-item-img" src="./images/icon-nav1.jpg" alt="">
+                                <div class="type-choose-detail">直升机</div>
+                            </li>
+                            <li>
+                                <img class="type-choose-item-img" src="./images/icon-nav1.jpg" alt="">
+                                <div class="type-choose-detail">直升机</div>
+                            </li>
+                            <li>
+                                <img class="type-choose-item-img" src="./images/icon-nav1.jpg" alt="">
+                                <div class="type-choose-detail">直升机</div>
+                            </li>
+                            <li>
+                                <img class="type-choose-item-img" src="./images/icon-nav1.jpg" alt="">
+                                <div class="type-choose-detail">直升机</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="type-choose-item">
+                    <span class="type-choose-item-text">级别</span>
+                    <div class="type-choose-item-main">
+                        <ul>
+                            <li>全部</li>
+                            <li>小型2吨以下</li>
+                            <li>轻型2-4吨</li>
+                            <li>中型4-10吨</li>
+                            <li class="selected">大型10-12吨</li>
+                            <li>重型20吨以上</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="type-choose-item">
+                    <span class="type-choose-item-text">座位</span>
+                    <div class="type-choose-item-main">
+                        <ul>
+                            <li>全部</li>
+                            <li>2座以下</li>
+                            <li>2-4座</li>
+                            <li>5-8座</li>
+                            <li class="selected">8-13座</li>
+                            <li>13-20座</li>
+                            <li>20座以上</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="type-choose-item">
+                    <span class="type-choose-item-text">国别</span>
+                    <div class="type-choose-item-main">
+                        <ul>
+                            <li>全部</li>
+                            <li>中国</li>
+                            <li>美国</li>
+                            <li>法国</li>
+                            <li class="selected">德国</li>
+                            <li>意大利</li>
+                            <li>美国</li>
+                            <li>俄罗斯</li>
+                            <li>日本</li>
+                            <li>波兰</li>
+                            <li>捷克</li>
+                            <li>比利时</li>
+                            <li>印度</li>
+                            <li>伊朗</li>
+                            <li>南非</li>
+                            <li>其他</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="type-choose-item">
+                    <span class="type-choose-item-text">品牌中国首字</span>
+                    <div class="type-choose-item-main">
+                        <ul>
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                            <li>D</li>
+                            <li class="selected">E</li>
+                            <li>F</li>
+                            <li>G</li>
+                            <li>H</li>
+                            <li>I</li>
+                            <li>J</li>
+                            <li>K</li>
+                            <li>L</li>
+                            <li>M</li>
+                            <li>N</li>
+                            <li>O</li>
+                            <li>P</li>
+                            <li>Q</li>
+                            <li>R</li>
+                            <li>S</li>
+                            <li>T</li>
+                            <li>U</li>
+                            <li>V</li>
+                            <li>W</li>
+                            <li>S</li>
+                            <li>Y</li>
+                            <li>Z</li>
+                        </ul>
+                    </div>
+                    <div class="type-choose-item-check">
+                        <span class="choose-check"></span>
+                        <span >选择按品牌中文名称首字母拼音排序</span>
+                    </div>
+                </div>
+                <div class="type-choose-item">
+                    <span class="type-choose-item-text">品牌英文首字母</span>
+                    <div class="type-choose-item-main">
+                        <ul>
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                            <li>D</li>
+                            <li class="selected">E</li>
+                            <li>F</li>
+                            <li>G</li>
+                            <li>H</li>
+                            <li>I</li>
+                            <li>J</li>
+                            <li>K</li>
+                            <li>L</li>
+                            <li>M</li>
+                            <li>N</li>
+                            <li>O</li>
+                            <li>P</li>
+                            <li>Q</li>
+                            <li>R</li>
+                            <li>S</li>
+                            <li>T</li>
+                            <li>U</li>
+                            <li>V</li>
+                            <li>W</li>
+                            <li>S</li>
+                            <li>Y</li>
+                            <li>Z</li>
+                        </ul>
+                    </div>
+                    <div class="type-choose-item-check">
+                        <span class="choose-check"></span>
+                        <span >选择按品牌英文首字母排序</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="type-choose-box">
+                <div class="type-choose-tt">
+                    <span class="type-choose-tt-text">已选条件</span>
+                    <div class="type-choose-tt-min">
+                        <span class="type-choose-tt-btn">B<i class="type-choose-tt-icon"></i></span>
+                    </div>
+                </div>
+                <div class="type-choose-item item-lists">
+                    <span class="type-choose-item-text">
+                        <img class="choose-img" src="./images/choose1.png" alt="">
+                        <div class="choose-img-detail">贝尔直升机</div>
+                    </span>
+                    <div class="type-choose-item-main">
+                        <ul>
+                            <li>
+                                <img class="type-choose-item-img" src="./images/choose2.png" alt="">
+                                <div class="type-choose-detail">
+                                    <div>价格：4500-5500万元</div>
+                                    <div><ul>
+                                        <li class="choose-li">机型概述</li>
+                                        <li class="choose-li">技术参数</li>
+                                        <li class="choose-li">图片</li>
+                                    </ul></div>
+                                </div>
+                                <div class="type-choose-img-tip">EC135P/P3</div>
+                            </li>
+                            <li>
+                                <img class="type-choose-item-img" src="./images/choose2.png" alt="">
+                                <div class="type-choose-detail">
+                                    <div>价格：4500-5500万元</div>
+                                    <div><ul>
+                                        <li class="choose-li">机型概述</li>
+                                        <li class="choose-li">技术参数</li>
+                                        <li class="choose-li">图片</li>
+                                    </ul></div>
+                                </div>
+                                <div class="type-choose-img-tip">EC135P/P3</div>
+                            </li>
+                            <li>
+                                <img class="type-choose-item-img" src="./images/choose2.png" alt="">
+                                <div class="type-choose-detail">
+                                    <div>价格：4500-5500万元</div>
+                                    <div><ul>
+                                        <li class="choose-li">机型概述</li>
+                                        <li class="choose-li">技术参数</li>
+                                        <li class="choose-li">图片</li>
+                                    </ul></div>
+                                </div>
+                                <div class="type-choose-img-tip">EC135P/P3</div>
+                            </li>
+                            <li>
+                                <img class="type-choose-item-img" src="./images/choose2.png" alt="">
+                                <div class="type-choose-detail">
+                                    <div>价格：4500-5500万元</div>
+                                    <div><ul>
+                                        <li class="choose-li">机型概述</li>
+                                        <li class="choose-li">技术参数</li>
+                                        <li class="choose-li">图片</li>
+                                    </ul></div>
+                                </div>
+                                <div class="type-choose-img-tip">EC135P/P3</div>
+                            </li>
+                            <li>
+                                <img class="type-choose-item-img" src="./images/choose2.png" alt="">
+                                <div class="type-choose-detail">
+                                    <div>价格：4500-5500万元</div>
+                                    <div><ul>
+                                        <li class="choose-li">机型概述</li>
+                                        <li class="choose-li">技术参数</li>
+                                        <li class="choose-li">图片</li>
+                                    </ul></div>
+                                </div>
+                                <div class="type-choose-img-tip">EC135P/P3</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容主体模块 end -->
+    <!-- 底部模块 start -->
+    <div class="foot" id="footBox">
+        <div class="foot-wrap">
+            <div class="info clearfix">
+                <div class="w1 fl">
+                    <div><img src="images/logo.png" alt=""></div>
+                    <a class="btn qq" href="javascript:;">业 务 咨 询</a>
+                    <a class="btn weixin" href="javascript:;">售 后 服 务</a>
+                </div>
+                <div class="w2 fl">
+                    <div class="contact fl">
+                        <h2 class="tip">联系我们</h2>
+                        <div class="tel common">021-61525172</div>
+                        <div class="email common">409508623@qq.com</div>
+                        <div class="ads common">上海浦东新区浦东南路655号世纪广场17D</div>
+                    </div>
+                    <div class="code fr">
+                        <div class="code-box">
+                            <img class="ewm" src="images/icon-ewm.jpg" width="94" height="94" alt="">
+                            <img src="images/icon-ewm.jpg" width="94" height="94" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="w3 fr">
+                    <div class="data-box">
+                        <h2 class="tip">数据</h2>
+                        <div class="nav-box">
+                            <a class="nav" href="#">机型库</a>
+                            <a class="nav" href="#">企业库</a>
+                            <a class="nav" href="#">机场库</a>
+                            <a class="nav" href="#">文库</a>
+                            <a class="nav" href="#">成为会员</a>
+                            <a class="nav" href="#">会员纠错</a>
+                        </div>
+                        <div class="link-box">
+                            <a class="link">友情链接</a>
+                            <i class="arrow"></i>
+
+                            <div class="link-box-detail">
+                                <ul>
+                                    <li class="link-box-item"><a href="#">淘宝</a></li>
+                                    <li class="link-box-item"><a href="#">天猫</a></li>
+                                    <li class="link-box-item"><a href="#">支付宝</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-wrap">
+            <div class="copy">
+                <div class="fl">Copyright C 2017 上海翼趣航空咨询有限公司 版权所有 沪ICP050XXXXX号</div>
+                <div class="share fr">
+                    <span class="fl">分享到：</span>
+                    <div class="bdsharebuttonbox fl"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 注册，登录弹窗 s -->
+    <div id="alert-box"></div>
+    <!-- 注册，登录弹窗 e -->
+    <script src="js/public/jquery-1.8.3.js"></script>
+    <script src="js/public/swiper.min.js"></script>
+    <script src="js/public/layer/layer.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/newsdetail.js"></script>
+    <script>
+        // 轮播        
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true
+        });
+    </script>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["qzone","tsina","douban","sqq"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+</body>
+</html>

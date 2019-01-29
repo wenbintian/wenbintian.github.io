@@ -1,0 +1,90 @@
+@charset 'utf-8';
+/* CSS 重置 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    min-width: 1208px;
+    color: #000;
+    font-size: 14px;
+    font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;
+    background: #eaeef2;
+}
+td, th, caption {
+    font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+address, caption, cite, code, dfn, i, em, strong, th {
+    font-style: normal;
+    font-weight: normal;
+}
+a {
+    color: #38a4ff;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    color: #25b4d2;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    border: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+ol, ul, li {
+    list-style: none;
+}
+input[type="radio"] {
+    -webkit-appearance: none;
+}
+input:focus, button:focus {
+    outline: none;
+}
+input[type="radio"]:focus, input[type="radio"]:checked {
+    background-color: transparent;
+}
+input, textarea, select, button {
+    font: 14px "Microsoft Yahei",Arial, Helvetica, sans-serif;
+    border: none;
+    outline: none;
+}
+input::-webkit-input-placeholder {color: #a9a9a9;font-size: 12px;}
+button{
+    border: none;
+    cursor: pointer;
+}
+.fl{float: left;}
+.fr{float: right;}
+div{box-sizing: border-box;}
+.overflow{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.w1208{width: 1208px;}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+
+
+
+
+
+

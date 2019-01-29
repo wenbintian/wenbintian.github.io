@@ -1,0 +1,19 @@
+.content{background: #fdfdfd;}
+.content .top-img-box{height:600px;background: linear-gradient(to bottom, #3e5692, #add1f3);}
+.top-img-box .top-img{height: 490px;width: 100%;margin: 55px 0;}
+.title{font-size: 30px;text-align: center;padding: 60px 0;}
+.advantage-box .advantage-list{padding-bottom: 80px;padding-top: 40px;}
+.advantage-box .advantage-list ul{overflow: hidden;padding:0 65px;}
+.advantage-box .advantage-list .advantage-item{width: calc(25% - 50px);height: 323px;text-align:center;float: left;margin: 0 25px;color: #fff;font-size: 18px;border-radius: 5px;}
+.advantage-box .advantage-list .advantage-item:nth-child(1){background-color: #ff6400;}
+.advantage-box .advantage-list .advantage-item:nth-child(2){background-color: #01d447;}
+.advantage-box .advantage-list .advantage-item:nth-child(3){background-color: #00a3ff;}
+.advantage-box .advantage-list .advantage-item:nth-child(4){background-color: #bc44f1;}
+.advantage-box .advantage-item-title{padding: 45px 0 35px; font-size: 18px; line-height: 25px;}
+.line{height: 53px;background-color: #f6f7fb;}
+.join-process-box .join-process-list ul{overflow: hidden;text-align: center;padding:0 70px;}
+.join-process-box .join-process-item{width: 33%;height: 160px;float: left;padding: 0 110px;}
+.join-process-box .join-process-item-title{font-size: 16px; line-height: 20px;}
+.join-process-box .contact-wrap{padding:95px 0;color: #fff; text-align: center; font-size: 16px;}
+.join-process-box .tel-text{padding: 20px 65px;border-radius: 5px;background-color: #ff9d26;display: inline-block;}
+.join-process-box .tel-num{padding: 20px 30px;border-radius: 5px;background-color: #ff3e3e;display: inline-block;margin-left: 180px;}
