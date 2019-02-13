@@ -29,7 +29,8 @@
           &lt;table&gt;
           &lt;tr v-for=&quot;(item,index) in tbData&quot; :key=&quot;item.id&quot;&gt;
           &lt;td&gt;&lt;input v-model=&quot;item.text&quot;  :ref=&quot;&#x60;table_${index}&#x60;&quot; @focus=&quot;current3=&#x60;table_${index}[0]&#x60;&quot;&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;input v-model=&quot;item.text2&quot; :ref=&quot;&#x60;table_${index}&#x60;&quot; @focus=&quot;current3=&#x60;table_${index}[1]&#x60;&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;input :disabled=&quot;item.text3Disabeld&quot; v-model=&quot;item.text3&quot; :ref=&quot;&#x60;table_${index}&#x60;&quot; @focus=&quot;current3=&#x60;table_${index}[1]&#x60;&quot;&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;input v-model=&quot;item.text2&quot; :ref=&quot;&#x60;table_${index}&#x60;&quot; @focus=&quot;current3=&#x60;table_${index}[2]&#x60;&quot;&gt;&lt;/td&gt;
           &lt;/tr&gt;&lt;/table&gt;
           &lt;/div&gt;
           data() {
