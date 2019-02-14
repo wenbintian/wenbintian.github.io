@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./js/element-ui/index.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div class="main" id="main">
+    <h2>基本信息</h2>
+    <el-row>
+      <el-col :span="19" class="row-box">
+        <el-row class="second-row">
+          <el-col :span="12">张某某 | 男 | 1993</el-col>
+          <el-col :span="12">应聘 前端工程师 | 3 年工作经验</el-col>
+        </el-row>
+        <el-row class="second-row">
+          <el-col :span="12">华侨大学 | 软件工程 | 本科</el-col>
+          <el-col :span="12">手机：1218371273</el-col>
+        </el-row>
+        <el-row class="second-row">
+          <el-col :span="12">Email：972619117@qq.com</el-col>
+          <el-col :span="12">住址：厦门湖里区古地石</el-col>
+        </el-row>
+        <el-row class="second-row">
+          <el-col :span="12">Github：<a target="_blank" class="col-link" href="https://github.com/wenbintian/">https://github.com/wenbintian/</a></el-col>
+          <el-col :span="12">博客：<a target="_blank" class="col-link" href="https://blog.csdn.net/weixin_44653329/">https://blog.csdn.net/weixin_44653329/</a></el-col>
+        </el-row>
+      </el-col>
+      <el-col :span="5" class="row-cert-box"><img src="./images/3015.jpg" alt="头像" class="row-cert"></el-col>
+    </el-row>
+    <h2>职业技能</h2>
+    <el-row class="row-box">
+      <el-col :span="24" class="row-box-col">-熟练掌握前端技术 Javascript/CSS/SASS/HTML以及CSS3/HTML5</el-col>
+      <el-col :span="24" class="row-box-col">-能够<strong>语义化</strong>的编写HTML文档</el-col>
+      <el-col :span="24" class="row-box-col">-熟练掌握<strong>Vue</strong>；熟悉Angular</el-col>
+    </el-row>
+  </div>
+  <script src="./js/vue.js"></script>
+  <script src="./js/element-ui/index.js"></script>
+  <script>
+    new Vue({
+      el:"#main"
+    })
+  </script>
+</body>
+</html>
