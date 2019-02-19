@@ -1,3 +1,4 @@
+# 作品说明
 # luck
 > 一款抽奖工具
 -[在线预览](https://wenbintian.github.io/luck/)
