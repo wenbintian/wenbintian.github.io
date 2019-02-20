@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./js/element-ui/index.css">
+  <!--<link rel="stylesheet" href="./css/index.css">-->
+</head>
+<body>
+  <div class="main" id="main">
+    <h2>基本信息</h2>
+    <el-row>
+      <el-col :span="24" class="row-box">
+        <el-row class="second-row">
+          <el-col :span="12">张某某 | 男 | 1992</el-col>
+          <el-col :span="12">应聘 前端工程师 | 3 年工作经验</el-col>
+        </el-row>
+        <el-row class="second-row">
+          <el-col :span="12">华侨大学 | 软件工程 | 本科</el-col>
+          <el-col :span="12">手机：1218371273</el-col>
+        </el-row>
+        <el-row class="second-row">
+          <el-col :span="12">Email：972619117@qq.com</el-col>
+          <el-col :span="12">住址：厦门湖里区古地石</el-col>
+        </el-row>
+        <el-row class="second-row">
+          <el-col :span="12">Github：<a target="_blank" class="col-link" href="https://github.com/wenbintian/">https://github.com/wenbintian/</a></el-col>
+          <el-col :span="12">博客：<a target="_blank" class="col-link" href="https://blog.csdn.net/weixin_44653329/">https://blog.csdn.net/weixin_44653329/</a></el-col>
+        </el-row>
+      </el-col>
+    </el-row>
+    <h2>职业技能</h2>
+    <el-row class="row-box">
+      <el-col :span="24" class="row-box-col">-熟练掌握前端技术 JavaScript、CSS/CSS3、SASS、HTML/HTML5</el-col>
+      <el-col :span="24" class="row-box-col">-能够<strong>语义化</strong>的编写HTML文档</el-col>
+      <el-col :span="24" class="row-box-col">-对前端性能优化方面有实际的理解</el-col>
+      <el-col :span="24" class="row-box-col">-熟练掌握<strong>Vue</strong>，对vue生命周期有自己的理解；了解Angular</el-col>
+      <el-col :span="24" class="row-box-col">-熟练使用element-ui组件；能熟练封装自定义vue组件；掌握vue+express框架</el-col>
+      <el-col :span="24" class="row-box-col">-会使用NodeJS服务端语言，并有相关的项目经验</el-col>
+      <el-col :span="24" class="row-box-col">-掌握微信小程序的开发技术</el-col>
+      <el-col :span="24" class="row-box-col">-掌握ES6常用的语法</el-col>
+    </el-row>
+    <h2>工作经历</h2>
+    <el-row class="row-box">
+      <el-col :span="24" class="row-box-col">
+        <div class="row-col-tt">●智业软件股份有限公司（2016年2月--至今）<span >——前端工程师</span></div>
+        <h5>-- HIS5.0（医院信息系统）</h5>
+        <p class="margin_bt"><strong>简介：</strong>HIS5.0是覆盖医院所有业务和业务全过程的信息管理系统。主要目标是辅助医院管理，提高医院工作效率，从而使医院以少的投入获得更好的社会效益与经济效益。</p>
+        <p class="margin_bt"><strong>主要职责：</strong>前期负责主要页面数据交互的开发；后期负责整个项目的 VUE公共组件的开发 、业务逻辑复杂的模块的开发和页面框架的搭建。</p>
+        <p class="margin_bt"><strong>技术与难点：</strong></p>
+        <p class="margin_bt">1.基于NodeJS+Vue+webpack 开发的多页面应用，由于系统项目庞大以及业务需求，所以采用多页面应用。</p>
+        <p class="margin_bt">2.采用Git(分布式版本控制系统)来进行项目版本管理的问题</p>
+        <p class="margin_bt">4.采用字体图标提高渲染效率，使用css预处理器--sass提高项目的开发效率。</p>
+        <p class="margin_bt">5.因为项目需要支持全键盘操作，所以对表格、表单进行了快捷键的封装。</p>
+        <h5>-- HIS5.0 门户系统</h5>
+        <p>HIS5.0 门户系统是基于模块化的设计理念，为HIS5.0项目保驾护航的桌面系统，采用的是NodeJS(Express)+Vue生态架构。前端技术负责人，使用Node.js搭建中间件实现前后端分离。通过 <strong>WebSocket</strong> 这种基于服务器端的推送技术实现单点登录功能。主页面应用了基于
+          <a href="https://github.com/mauricius/vue-draggable-resizable">vue-draggable-resizable</a> 组件封装的独具特色的拖拽组件。</p>
+        <h5>-- 患者管理服务平台（微信小程序）</h5>
+        <p>患者管理服务平台基于微信小程序MINA框架的WXML、WXSS、JS为代码语言进行开发,是一个为患者提供便利服务为核心的项目。前端主要技术负责人，负责主框架的搭建以及主业务的开发。</p>
+      </el-col>
+    </el-row>
+  </div>
+  <script src="./js/vue.js"></script>
+  <script src="./js/element-ui/index.js"></script>
+  <script>
+    new Vue({
+      el:"#main"
+    })
+  </script>
+</body>
+<style>
+  html,body{background: #fcfcfc; width: 100%; height: 100%; padding: 0; margin: 0;  font-family: Helvetica, Arial, sans-serif; font-size: 15px;}
+  .main{max-width: 800px; box-shadow: 1px 1px 8px rgba(0, 0, 0, .15); padding: 15px; margin: 20px auto; background: #fff;}
+  h2{ border-left: 5px solid #9a9a9a; margin-left: -15px; padding-left: 15px; line-height: 23px; }
+  h5{margin: 20px 0 10px;}
+  p{line-height: 1.5em; text-indent: 2em; margin-top: 0;}
+  .row-box{border-radius: 5px; border: 2px solid #ddd; background: #f2f2f2;}
+  .second-row+.second-row{border-top: 1px solid #ddd;}
+  .second-row .el-col{padding: 6px 8px;}
+  .second-row .el-col+.el-col{border-left: 1px solid #ddd;}
+  .row-cert-box{text-align: right;}
+  .row-cert{width: 109px; height: 152px; margin: 0 10px;}
+  .col-link{color: #000; text-decoration: none;}
+  .col-link:hover{ text-decoration: underline; }
+  .row-box-col +.row-box-col{border-top: 1px solid #ddd}
+  .row-box-col{padding: 6px 8px;}
+  .margin_bt{margin-bottom: 10px;}
+</style>
+</html>
