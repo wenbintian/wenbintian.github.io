@@ -11,20 +11,20 @@
     <h2>基本信息</h2>
     <div class="row-box">
       <div class="row-flex">
-        <div class="second-row-item">张某某 | 男 | 1992</div>
-        <div class="second-row-item">应聘 前端工程师 | 3 年工作经验</div>
+        <div class="second-row-item">&nbsp;张某某 | 男 | 1992</div>
+        <div class="second-row-item left_border">&nbsp;应聘 前端工程师 | 3 年工作经验</div>
       </div>
       <div class="row-flex">
-        <div class="second-row-item">华侨大学 | 软件工程 | 本科</div>
-        <div class="second-row-item">手机：1218371273</div>
+        <div class="second-row-item">&nbsp;华侨大学 | 软件工程 | 本科</div>
+        <div class="second-row-item left_border">&nbsp;手机:&nbsp; 1218371273</div>
       </div>
       <div class="row-flex">
-        <div class="second-row-item">Email：972619117@qq.com</div>
-        <div class="second-row-item">住址：厦门湖里区古地石</div>
+        <div class="second-row-item">&nbsp;Email:&nbsp; 972619117@qq.com</div>
+        <div class="second-row-item left_border">&nbsp;住址:&nbsp; 厦门湖里区古地石</div>
       </div>
       <div class="row-flex">
-        <div class="second-row-item">Github：<a target="_blank" class="col-link" href="https://github.com/wenbintian/">https://github.com/wenbintian/</a></div>
-        <div class="second-row-item">博客：<a target="_blank" class="col-link" href="https://blog.csdn.net/weixin_44653329/">https://blog.csdn.net/weixin_44653329/</a></div>
+        <div class="second-row-item">&nbsp;Github:&nbsp; <a target="_blank" class="col-link" href="https://github.com/wenbintian/">https://github.com/wenbintian/</a></div>
+        <div class="second-row-item left_border">&nbsp;博客:&nbsp; <a tet="_blank" class="col-link" href="https://blog.csdn.net/weixin_44653329/">https://blog.csdn.net/weixin_44653329/</a></div>
       </div>
     </div>
 
@@ -66,11 +66,12 @@
   h2{ border-left: 5px solid #9a9a9a; margin-left: -15px; padding-left: 15px; line-height: 23px; }
   h5{margin: 20px 0 10px;}
   p{line-height: 1.5em; text-indent: 2em; margin-top: 0;}
-  .row-box{border-radius: 5px; border: 2px solid #ddd; background: #f2f2f2;}
-  .row-flex{display: flex; border-bottom: 1px solid #ddd;}
+  .row-box{border-radius: 5px; border: 2px solid #ddd; background: #f2f2f2; width: 100%;}
+  .row-flex{border-bottom: 1px solid #ddd; width: 100%;}
   .row-flex:last-child{border-bottom: none;}
-  .second-row-item{flex-basis: 50%;padding: 6px 8px; flex-shrink: 1;flex-grow:0;}
-  .second-row-item +.second-row-item{border-left: 1px solid #ddd; }
+  .second-row-item{width: 48%; display: inline-block; padding-left: 6px; line-height: 36px;}
+  .left_border{border-left: 1px solid #ddd; }
+  .second-row-item span{}
   .row-box-col +.row-box-col{border-top: 1px solid #ddd}
   .row-box-col{padding: 6px 8px;}
   .col-link:hover{ text-decoration: underline; }
